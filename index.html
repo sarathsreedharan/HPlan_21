@@ -24,55 +24,16 @@
     <script src="../../assets/js/custom.js"></script>
   </head>
   <body>
-    <header class="navbar fixed-top p-3 border-bottom">
-      <nav class="navbar navbar-light navbar-expand-lg">
-        <div class="container-fluid d-flex">
-          <a class="navbar-brand text-dark">ICAPS 2021</a>
-          <div>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a href="../../home" class="nav-link px-2">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a href="../../papers" class="nav-link px-2">Papers</a>
-                </li>
-		<li class="nav-item">
-                  <a href="../../Calls" class="nav-link px-2">Calls</a>
-                </li>
-                <li class="nav-item">
-                  <a href="../../workshops" class="nav-link px-2 active"
-                    >Workshops</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a href="../../Competitions" class="nav-link px-2"
-                    >Competitions</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a href="../../Committee" class="nav-link px-2">Committee</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </nav>
-    </header>
+    <div id="icaps-header">
+      <myheader curpage="workshops"></myheader>
+    </div>
+    <script src="/assets/component/myheader.js" type="module"></script>
 
     <div class="album mt-3">
       <div style="height: 100px" class="d-none d-md-block">
         <!-- padding hack for the fixed navbar -->
       </div>
-
+      
       <div class="container">
         <div class="row">
           <div class="col col-12 col-xs-12 col-sm-12 col-md-12 col-lg-4 p-4">
@@ -270,21 +231,36 @@ submission details).</p>-->
                   LAAS-CNRS, 7 Av. Colonel Roche, 31077 Toulouse, France
                   
                   <div>
-                    <p style="float: left;"><img src="ghallab.jpg" alt="Malik Ghallab" align="”left”" /></p>
-                  
-                    <p>The research activity of Malik Ghallab
-                    is focused on AI and Robotics. He contributed to topics such
-                    as knowledge representation and reasoning, planning, and
-                    learning of skills and models of behaviors. He (co-)authored
-                    over 200 technical papers and several books. He taught AI at
-                    a few universities in France and abroad; he advised 32 PhDs.
-                    He was director of several AI research programs in France,
-                    director of LAAS-CNRS and CTO of INRIA. He chairs the
-                    Steering Committee of ANITI, the interdisciplinary AI
-                    institute of Toulouse. His is involved in initiatives
-                    regarding socially responsible research in AI and
-                    computational sciences. He is ECCAI Fellow, and Docteur
-                    Honoris Causa of Linköping University, Sweden.</p>
+                    <div class="row">
+                      <div class="col col-md-4">
+			           <div class="col-md-12">
+                          <img
+                            src="ghallab.jpg"
+                            alt="Malik Ghallab"
+                          />
+                       </div>
+                      </div>
+                      <div class="col col-md-8">
+			           <div class="col-md-12" style="padding-left:20px;">
+                        <p>
+                          The research activity of Malik Ghallab is focused on
+                          AI and Robotics. He contributed to topics such as
+                          knowledge representation and reasoning, planning, and
+                          learning of skills and models of behaviors. He
+                          (co-)authored over 200 technical papers and several
+                          books. He taught AI at a few universities in France
+                          and abroad; he advised 32 PhDs. He was director of
+                          several AI research programs in France, director of
+                          LAAS-CNRS and CTO of INRIA. He chairs the Steering
+                          Committee of ANITI, the interdisciplinary AI institute
+                          of Toulouse. His is involved in initiatives regarding
+                          socially responsible research in AI and computational
+                          sciences. He is ECCAI Fellow, and Docteur Honoris
+                          Causa of Linköping University, Sweden.
+                        </p>
+                       </div>
+                      </div>
+                    </div>
                   </div>
                   
                   
