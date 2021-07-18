@@ -237,7 +237,7 @@ submission details).</p>-->
                   
                   <p>Hierarchization in planning has often been viewed mainly as a means for reducing the search complexity, to be paid for with additional domain modeling efforts. HTN planning, for example, has sometime been opposed to generative planning techniques, and referred to as a programming paradigm in planning. We pursue here a quite different motivation for hierarchization than tractable computations in a huge search space. Namely, we are interested in planning for the purpose of acting, and consider hierarchization as a central concept for the integration of reasoning on actions and performing them.<br><br>
                   
-                  We have argued in [1] that the design of a cognitive actor has to rely on two interconnected principles: <i>(i) hierarchically organized deliberation</i>, and <i>(ii) continual online planning and reasoning</i>. Many challenging problems for such a design have been underlined in [1], several of which remain pending, while a few have progressed towards acceptable solutions. This talk will report on a line of work that illustrates such a progress.1 Initiated in [2, chap. 3], the work was pursued through several algorithmic developments and trials, e.g., in [3, 5, 6]; it reached a comprehensive stage in [4]. The talk will motivate the integrated planning and acting issues and present three technical com ponents:<br>
+                  We have argued in [1] that the design of a cognitive actor has to rely on two interconnected principles: <i>(i) hierarchically organized deliberation</i>, and <i>(ii) continual online planning and reasoning</i>. Many challenging problems for such a design have been underlined in [1], several of which remain pending, while a few have progressed towards acceptable solutions. This talk will report on a line of work that illustrates such a progress.<sup>1</sup> Initiated in [2, chap. 3], the work was pursued through several algorithmic developments and trials, e.g., in [3, 5, 6]; it reached a comprehensive stage in [4]. The talk will motivate the integrated planning and acting issues and present three technical com ponents:<br>
 
                   <ul>
                     <li>A hierarchical task-oriented knowledge representation for expressing operational models of actions (how to do things), which relies on a collection of refinement methods describing alternative ways to handle tasks and react to events. A refinement method can be any complex algorithm, with subtasks to be refined recursively and nondeterministic primitive actions which query and change the world.</li>
@@ -247,8 +247,11 @@ submission details).</p>-->
                     <li>A Monte Carlo Tree Search planner, called UPOM, which assesses the utility of possible methods and finds an approximately optimal one for RAE to pursue an ongoing activity. UPOM is a progressive deepening, receding-horizon anytime planner which relies on domain-dependent heuristics, learned from simulations and/or real-world interactions.</li>
                   </ul>
 
-                  A few empirical results will be presented. Two Extensions of the approach for handling temporal issues as well as space and motion planning issues (to address the well know “Task and Motion Planning” TAMP problems) will be briefly discussed, together with perspectives for learning refinement methods for operational models.
+                  A few empirical results will be presented.<sup>2</sup> Extensions of the approach for handling temporal issues as well as space and motion planning issues (to address the well know “Task and Motion Planning” TAMP problems) will be briefly discussed, together with perspectives for learning refinement methods for operational models.
                   </p>
+                  
+                  <sup>1</sup>: A line of work in collaboration with my co-authors Dana Nau, Paolo Traverso, Sunandita Patra and James Mason.<br>
+                  <sup>2</sup>: A “Demonstration of Refinement Acting, Planning and Learning System Using Operational Models” will be presented at the ICAPS 2021 demonstration session.
 
                   <h5>References</h5>
                   
